@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C91A86F27C7CA7D00E7D2F4 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C91A86E27C7CA7D00E7D2F4 /* ImagePicker.swift */; };
+		2C91A87127C7CB7A00E7D2F4 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C91A87027C7CB7A00E7D2F4 /* Classifier.swift */; };
+		2C91A87327C7CC1600E7D2F4 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C91A87227C7CC1600E7D2F4 /* ImageClassifier.swift */; };
+		2C91A87527C7D4E700E7D2F4 /* cat_to_name.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C91A87427C7D4E700E7D2F4 /* cat_to_name.json */; };
+		2C91A87A27C7D87B00E7D2F4 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 2C91A87927C7D87B00E7D2F4 /* SwiftyJSON */; };
+		2C91A87C27C85D8300E7D2F4 /* CoinClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2C91A87B27C85D8300E7D2F4 /* CoinClassifier.mlmodel */; };
 		2CD541AE27C52E21006CC915 /* Coin_Image_ClassificationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD541AD27C52E21006CC915 /* Coin_Image_ClassificationApp.swift */; };
 		2CD541B027C52E22006CC915 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD541AF27C52E22006CC915 /* ContentView.swift */; };
 		2CD541B227C52E25006CC915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD541B127C52E25006CC915 /* Assets.xcassets */; };
@@ -34,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C91A86E27C7CA7D00E7D2F4 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		2C91A87027C7CB7A00E7D2F4 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+		2C91A87227C7CC1600E7D2F4 /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
+		2C91A87427C7D4E700E7D2F4 /* cat_to_name.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat_to_name.json; sourceTree = "<group>"; };
+		2C91A87B27C85D8300E7D2F4 /* CoinClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CoinClassifier.mlmodel; sourceTree = "<group>"; };
 		2CD541AA27C52E21006CC915 /* Coin Image Classification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coin Image Classification.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD541AD27C52E21006CC915 /* Coin_Image_ClassificationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin_Image_ClassificationApp.swift; sourceTree = "<group>"; };
 		2CD541AF27C52E22006CC915 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C91A87A27C7D87B00E7D2F4 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +108,12 @@
 			children = (
 				2CD541AD27C52E21006CC915 /* Coin_Image_ClassificationApp.swift */,
 				2CD541AF27C52E22006CC915 /* ContentView.swift */,
+				2C91A86E27C7CA7D00E7D2F4 /* ImagePicker.swift */,
+				2C91A87027C7CB7A00E7D2F4 /* Classifier.swift */,
+				2C91A87227C7CC1600E7D2F4 /* ImageClassifier.swift */,
 				2CD541B127C52E25006CC915 /* Assets.xcassets */,
+				2C91A87427C7D4E700E7D2F4 /* cat_to_name.json */,
+				2C91A87B27C85D8300E7D2F4 /* CoinClassifier.mlmodel */,
 				2CD541B327C52E25006CC915 /* Preview Content */,
 			);
 			path = "Coin Image Classification";
@@ -143,6 +160,9 @@
 			dependencies = (
 			);
 			name = "Coin Image Classification";
+			packageProductDependencies = (
+				2C91A87927C7D87B00E7D2F4 /* SwiftyJSON */,
+			);
 			productName = "Coin Image Classification";
 			productReference = 2CD541AA27C52E21006CC915 /* Coin Image Classification.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +235,9 @@
 				Base,
 			);
 			mainGroup = 2CD541A127C52E21006CC915;
+			packageReferences = (
+				2C91A87827C7D87B00E7D2F4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 2CD541AB27C52E21006CC915 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CD541B527C52E25006CC915 /* Preview Assets.xcassets in Resources */,
+				2C91A87527C7D4E700E7D2F4 /* cat_to_name.json in Resources */,
 				2CD541B227C52E25006CC915 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +281,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C91A87127C7CB7A00E7D2F4 /* Classifier.swift in Sources */,
 				2CD541B027C52E22006CC915 /* ContentView.swift in Sources */,
+				2C91A87C27C85D8300E7D2F4 /* CoinClassifier.mlmodel in Sources */,
+				2C91A86F27C7CA7D00E7D2F4 /* ImagePicker.swift in Sources */,
 				2CD541AE27C52E21006CC915 /* Coin_Image_ClassificationApp.swift in Sources */,
+				2C91A87327C7CC1600E7D2F4 /* ImageClassifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +450,7 @@
 				DEVELOPMENT_TEAM = QWVAEMBXMM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Using camera to take a picture";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,6 +480,7 @@
 				DEVELOPMENT_TEAM = QWVAEMBXMM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Using camera to take a picture";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -585,6 +615,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C91A87827C7D87B00E7D2F4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C91A87927C7D87B00E7D2F4 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C91A87827C7D87B00E7D2F4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2CD541A227C52E21006CC915 /* Project object */;
 }
