@@ -83,6 +83,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CC314C827D228AA00B180B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C91A87027C7CB7A00E7D2F4 /* Classifier.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CC314C927D228B400B180B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CD541AF27C52E22006CC915 /* ContentView.swift */,
+				2C91A86E27C7CA7D00E7D2F4 /* ImagePicker.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CC314CA27D228BC00B180B4 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C91A87227C7CC1600E7D2F4 /* ImageClassifier.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
 		2CD541A127C52E21006CC915 = {
 			isa = PBXGroup;
 			children = (
@@ -106,11 +131,10 @@
 		2CD541AC27C52E21006CC915 /* Coin Image Classification */ = {
 			isa = PBXGroup;
 			children = (
+				2CC314C827D228AA00B180B4 /* Model */,
+				2CC314C927D228B400B180B4 /* View */,
+				2CC314CA27D228BC00B180B4 /* View Model */,
 				2CD541AD27C52E21006CC915 /* Coin_Image_ClassificationApp.swift */,
-				2CD541AF27C52E22006CC915 /* ContentView.swift */,
-				2C91A86E27C7CA7D00E7D2F4 /* ImagePicker.swift */,
-				2C91A87027C7CB7A00E7D2F4 /* Classifier.swift */,
-				2C91A87227C7CC1600E7D2F4 /* ImageClassifier.swift */,
 				2CD541B127C52E25006CC915 /* Assets.xcassets */,
 				2C91A87427C7D4E700E7D2F4 /* cat_to_name.json */,
 				2C91A87B27C85D8300E7D2F4 /* CoinClassifier.mlmodel */,
